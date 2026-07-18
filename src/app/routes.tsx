@@ -40,4 +40,7 @@ export const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  // Tells React Router that the app lives inside the /SIA2_Activity1/ subdirectory
+  basename: "/SIA2_Activity1",
+});
