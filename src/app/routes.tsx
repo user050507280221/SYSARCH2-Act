@@ -21,11 +21,11 @@ export const router = createBrowserRouter([
     Component: Root,
     children: [
       {
-        path: "/",
+        // Removing 'index: true' or 'path' here turns this into a clean pathless layout route
         Component: AdminPortal,
         children: [
           {
-            index: true,
+            index: true, // This correctly handles the default homepage view inside the portal
             Component: AdminDashboard,
           },
           {
@@ -41,6 +41,5 @@ export const router = createBrowserRouter([
     ],
   },
 ], {
-  // Tells React Router that the app lives inside the /SIA2_Activity1/ subdirectory
   basename: "/SYSARCH2-Act",
 });
