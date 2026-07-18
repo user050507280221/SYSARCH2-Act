@@ -1,0 +1,27 @@
+@import 'tailwindcss' source(none);
+@source '../**/*.{js,ts,jsx,tsx}';
+
+@import 'tw-animate-css';
+
+/* Target the scrollbar as a whole */
+::-webkit-scrollbar {
+  width: 8px; /* Width for vertical scrollbars */
+  height: 8px; /* Height for horizontal scrollbars */
+}
+
+/* The track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+/* The draggable thumb (the actual bar) */
+::-webkit-scrollbar-thumb {
+  background: #800000; /* Your Deep Maroon Theme */
+  border-radius: 10px;
+}
+
+/* Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #600000; /* A darker maroon on hover */
+}
