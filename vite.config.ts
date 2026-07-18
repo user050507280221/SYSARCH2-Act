@@ -20,7 +20,8 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  base: '/SIA2_Activity1/',
+  // Directs GitHub Pages to serve the bundle out of your specific repository subdirectory
+  base: '/SYSARCH2-Act/',
   plugins: [
     figmaAssetResolver(),
     react(),
@@ -28,7 +29,6 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      // Clean path mapping resolution
       '@': resolve(__dirname, 'src'),
     },
   },
