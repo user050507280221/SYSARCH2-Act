@@ -21,11 +21,11 @@ export const router = createBrowserRouter([
     Component: Root,
     children: [
       {
-        // Removing 'index: true' or 'path' here turns this into a clean pathless layout route
+        path: "/",
         Component: AdminPortal,
         children: [
           {
-            index: true, // This correctly handles the default homepage view inside the portal
+            index: true,
             Component: AdminDashboard,
           },
           {
@@ -40,6 +40,4 @@ export const router = createBrowserRouter([
       },
     ],
   },
-], {
-  basename: "/SYSARCH2-Act",
-});
+]);
